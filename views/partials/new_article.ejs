@@ -1,0 +1,21 @@
+<% for (var i = 0; i < titleToBePosted.length; i++) { %> 
+    <div class="article container-fluid">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <form action="/delete/<%= i %>" method="POST" class="col-6"  >
+                <article>
+                    <h2 class="article-title"> <%= locals.titleToBePosted[i] %> </h2>
+                    <p class="date-article"><%= locals.dateOfPost %> </p>
+                    <p class="content-article">
+                        <%= locals.articleToBePosted[i] %>
+                    </p>
+                </article>
+                <button type="submit" class="btn supprime btn-outline-danger">Supprimer</button>
+                <hr>
+            </form>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+<% } %>

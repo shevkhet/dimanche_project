@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+    
+    <% if (locals.dateOfPost) { %>
+        <%- include("partials/new_article.ejs") %>
+    <% } %>
+
+    <div class="create-article container-fluid">
+        <div class="row">
+            <div class="point col-3">
+
+            </div>
+            <form action="/submit" method="POST" class="saisie col-6 bd-example m-0 border-0">
+                <p></p>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Title post</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="titleplace" placeholder="Title">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Your post</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name ="postplace" rows="10" placeholder="Your post"></textarea>
+                </div>
+                <input type="submit" class="btn btn-outline-success"></input>
+            </form>
+            <div class="point col-3">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<%- include("partials/footer.ejs") %>
+</html>

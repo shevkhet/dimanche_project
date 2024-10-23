@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(251, 251, 254);
+
+}
+
+.webtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #f8f9fa;
+    color:blueviolet;
+}
+
+.supprime {
+    margin: 10px 0px;
+}
+
+.container{
+    width: 100%;
+}
